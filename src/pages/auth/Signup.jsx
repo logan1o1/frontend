@@ -49,7 +49,7 @@ export default function Signup() {
           type="text"
           placeholder="Username"
           className="border p-2 rounded-lg bg-green"
-          id="username"
+          id="userName"
           onChange={handleChange}
         />
         <input
