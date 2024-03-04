@@ -1,0 +1,42 @@
+.list-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .list-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .list-card .image {
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .list-card .image img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .list-card .details {
+    flex-grow: 1;
+  }
+  
+  .list-card h3 {
+    margin: 0 0 5px;
+    font-size: 40px;
+    color: #333;
+  }
+  
+  .list-card h4, .list-card h5 {
+    margin: 0;
+    font-size: 20px;
+    color: #666;
+  }
+  
