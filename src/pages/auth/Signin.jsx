@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import './Signin.css'
 import { useDispatch, useSelector } from 'react-redux'
-  import { signinFailure, signinStart, signinSuccess } from "../../redux/user/userSlice";
+import { signinFailure, signinStart, signinSuccess } from "../../redux/user/userSlice";
 
 
 export default function Signin() {
