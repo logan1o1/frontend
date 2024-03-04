@@ -8,9 +8,6 @@ const Home = () => {
     <>
       <div className="container">
         <Nav />
-        <div className="slogan">
-          <h2>A place to Learn, A place to Earn</h2>
-        </div>
         <div className="cards-container">
           <Cards />
           <Cards />
