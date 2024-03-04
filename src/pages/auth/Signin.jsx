@@ -49,7 +49,7 @@ export default function Signin() {
           type="text"
           placeholder="Username"
           className="border p-2 rounded-lg"
-          id="username"
+          id="userName"
           onChange={handleChange}
         />
         <input
