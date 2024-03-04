@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
+import './Signin.css'
 export default function Signin() {
   const [formData, setFormData] = useState({});
   const navigate = useNavigate();
@@ -14,30 +14,12 @@ export default function Signin() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // try {
-    //   dispatch(signinStart());
-    //   const result = await fetch("/api/auth/signin", {
-    //     method: "POST",
-    //     body: JSON.stringify(formData),
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //   });
-    //   const data = await result.json();
-    //   if (data.success === false) {
-    //     dispatch(signinFailure(data.message));
-    //     return;
-    //   }
-    //   dispatch(signinSuccess(data));
-    //   navigate("/");
-    // } catch (error) {
-    //   dispatch(signinFailure(error.message));
-    // }
+    
   };
 
   return (
     <div className="p-3 max-w-lg mx-auto">
-      <h1 className="text-3xl text-center font-semibold my-7">Sign In</h1>
+      <h1 className="text-3xl text-center font-semibold my-7 ">Sign In</h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <input
           type="text"
