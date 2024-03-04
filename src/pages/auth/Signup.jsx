@@ -4,9 +4,9 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function Signup() {
   const [formData, setFormData] = useState({});
-  // const [loading, setLoading] = useState(false);
-  // const [error, setError] = useState(null);
-  // const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({
@@ -17,28 +17,28 @@ export default function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // try {
-    //   setLoading(true);
-    //   const result = await fetch("/api/auth/signup", {
-    //     method: "POST",
-    //     body: JSON.stringify(formData),
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //   });
-    //   const data = await result.json();
-    //   if (data.success === false) {
-    //     setLoading(false);
-    //     setError(data.message);
-    //     return;
-    //   }
-    //   setLoading(false);
-    //   setError(null);
-    //   navigate("/sign-in");
-    // } catch (error) {
-    //   setLoading(false);
-    //   setError(error.message);
-    // }
+    try {
+      setLoading(true);
+      const result = await fetch("http://localhost:8888/user/signup", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await result.json();
+      if (data.success === false) {
+        setLoading(false);
+        setError(data.message);
+        return;
+      }
+      setLoading(false);
+      setError(null);
+      navigate("/signin");
+    } catch (error) {
+      setLoading(false);
+      setError(error.message);
+    }
   };
 
   return (
@@ -74,7 +74,7 @@ export default function Signup() {
       </form>
       <div className="flex gap-2 mt-5">
         <p>Already have an account?</p>
-        <Link to="/sign-in">
+        <Link to="/signin">
           <span className="text-blue-600">Sign in</span>
         </Link>
       </div>
