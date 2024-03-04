@@ -3,7 +3,7 @@ import React from "react";
 import './Sell.css'
 const Sell = () => {
   return (
-    <div>
+    <div className="container">
       <h1 className="h1">Sell  Your Used Books,Let Your Junior Learn more better Than You</h1>
       <div className="sell">
       <TextField id="outlined-basic" label="Outlined" variant="outlined" />
