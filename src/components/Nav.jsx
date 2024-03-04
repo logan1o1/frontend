@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom'
 const Nav = () => {
   return (
     <div>
+<<<<<<< HEAD
+        <nav className="bg-white border-gray-200 dark:bg-gray-900" style={{marginBottom: "20px"}}>
+=======
         <nav className="bg-white border-gray-200 dark:bg-gray-900 rounded-lg">
+>>>>>>> eba2f75bcefb423c40d1da2a7aade1d12a71d3ff
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <Link to={"/home"} className="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />

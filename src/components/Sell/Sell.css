@@ -1,6 +1,16 @@
 .h1{
     font-weight: 600;
     font-size: large;
+<<<<<<< HEAD
+}
+.sellForm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+=======
     background-color: rgb(101, 231, 101);
     width: 50%;
     border-radius: 20px;
@@ -14,3 +24,4 @@
     width: 100%;
     height: 100%;
 } */
+>>>>>>> eba2f75bcefb423c40d1da2a7aade1d12a71d3ff
