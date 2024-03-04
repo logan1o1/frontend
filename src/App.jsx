@@ -7,10 +7,12 @@ import Buy from './components/Buy/Buy'
 import Signin from './pages/auth/Signin'
 import Signup from './pages/auth/Signup'
 import MyList from './components/MyList/MyList'
+import Nav from './components/Nav'
 function App() {
   return (
     <>
       <BrowserRouter>
+      <Nav/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/mylist" element={<MyList />} />
