@@ -27,6 +27,13 @@ const Home = () => {
         <div className="cards-container">
           {books && books.map((book) => {})}
           <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
+          <Cards />
         </div>
       </div>
     </>
